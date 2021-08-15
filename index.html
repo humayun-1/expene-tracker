@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="../bootstrap-4.5.2-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.5.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.5.2-dist/css/bootstrap-grid.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="m-auto w-50">
+      <div class="text-center mb-4">
+        <h2>Expense Tracker</h2>
+      </div>
+      <div>
+        <h4 class="m-0 h4">Your Balance</h4>
+        <h3 class="mb-3 h3">$<span class="balance">00.00</span></h3>
+      </div>
+
+      <div class="row text-center m-0 box-shadow mb-5">
+        <div class="col-6 bg-light px-4 border py-4">
+          <h4>Income</h4>
+          <h4 class="text-success">$<span class="income">00.00</span></h4>
+        </div>
+        <div class="col-6 bg-light px-4 border py-4">
+          <h4>Expense</h4>
+          <h4 class="text-danger">$<span class="expense">00.00</span></h4>
+        </div>
+      </div>
+      <div class="w-100 mb-5">
+        <h4>History</h4>
+        <hr />
+        <div class="bars">
+        </div>
+      </div>
+
+      <div>
+        <h4>Add new transaction</h4>
+        <hr />
+
+        <h5>Text</h5>
+        <input
+          type="text"
+          id="text"
+          placeholder="Enter Title"
+          class="input-group input-group-lg p-2 border-primary mb-4"
+        />
+
+        <h5>Amount</h5>
+        <p class="">(Negative = Expense , Positive = Income)</p>
+        <input
+          type="number"
+          id="amount"
+          placeholder="Enter Amount"
+          class="input-group input-group-lg p-2 border-primary"
+        />
+
+        <button type="submit" class="btn add btn-lg btn-success my-3">
+          Add Transaction
+        </button>
+        <button class="btn reset btn-lg btn-danger my-3">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
